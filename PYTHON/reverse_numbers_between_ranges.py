@@ -1,9 +1,15 @@
+def between_ranges (lower, upper):
+	lower = int(lower)
+	upper = int(upper)
+	while (lower <= upper):
+		results = reverse_number(lower)
+		print(str(lower) + " --> " + str(results))
+		lower = lower + 1
+
 def reverse_number(num):
 	num = int(num)
 	d = digit_counter(num)
 	level = define_level(d)
-	#print("The 'd' is: " + str(d))
-	#print("The level is: " + str(level))
 	res = int(0)
 	while (num > 0):
 		temp = int(num % 10)
@@ -31,6 +37,7 @@ def define_level(dig_cnt):
 		dig_cnt = int(dig_cnt - 1)
 	return res
 
-x = int(input("User, enter a number: "))
-results = reverse_number(x)
-print(str(x) + " --> " + str(results))
+
+lwr = int(input("User, enter the lower edge: "))
+upr = int(input("User, enter the upper edge: "))
+between_ranges(lwr, upr)
