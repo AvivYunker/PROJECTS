@@ -1,0 +1,12 @@
+def between_ranges (lower, upper):
+    lower = int(lower)
+    upper = int(upper)
+    while (lower <= upper):
+        # some condition
+	lower = int(lower + 1)
+
+lwr = input("User, enter the upper edge:\n")
+upr = input("User, enter the lower edge:\n")
+lwr = int(lwr)
+upr = int(upr)
+between_ranges(lwr, upr)
