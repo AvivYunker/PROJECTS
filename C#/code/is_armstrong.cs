@@ -1,3 +1,5 @@
+using System;
+using static System.Math;
 namespace aviv_yunker {
 	class is_armstrong {
 		public static void Main (string [] args) {
@@ -24,8 +26,8 @@ namespace aviv_yunker {
 			}
 			while (num > 0) {
 				temp = num % 10;
-				temp = (float)(Math.Pow(temp,d));
-				sums += temp;
+				temp = (int)Math.Pow(temp,d);
+				sums += (int)temp;
 				num /= 10;
 			}
 			if (sums == orig) {
