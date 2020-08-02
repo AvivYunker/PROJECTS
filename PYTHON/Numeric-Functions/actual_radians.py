@@ -6,4 +6,3 @@ def actual_radians (num):
 x = int(input("User, enter radians: "))
 results = actual_radians(x)
 print(str(x) + " --> rad(" + str(results) + ")")
-

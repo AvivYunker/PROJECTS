@@ -2,5 +2,7 @@
 # NAME: "hello_world.py"
 # TAGS: print, hello-world, simple
 # CREDIT: none
+def main ():
+	print("Hello World")
 
-print("Hello World")
+main()
